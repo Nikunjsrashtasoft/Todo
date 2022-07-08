@@ -133,3 +133,6 @@ REST_FRAMEWORK = {
 'rest_framework.authentication.TokenAuthentication',
 ]
 }
+
+
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
