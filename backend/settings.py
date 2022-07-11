@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-)(y9$b!2d2tac4u*w(x^y44!^x=g)c4_-u(eq3_ad0)p6#*n$&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -50,7 +50,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-   # "whitenoise.middleware.WhiteNoiseMiddleware",
+    "whitenoise.middleware.WhiteNoiseMiddleware",
 ]
 
 ROOT_URLCONF = 'backend.urls'
@@ -133,3 +133,5 @@ REST_FRAMEWORK = {
 'rest_framework.authentication.TokenAuthentication',
 ]
 }
+
+
